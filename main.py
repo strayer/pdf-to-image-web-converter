@@ -10,7 +10,7 @@ from wand.resource import limits
 limits["memory"] = 1024 * 1024 * 100
 
 app = Flask(__name__)
-app.config["MAX_CONTENT_LENGTH"] = 32 * 1024 * 1024
+app.config["MAX_CONTENT_LENGTH"] = 64 * 1024 * 1024
 
 if app.debug:
     app.secret_key = b"debug"
