@@ -1,4 +1,4 @@
-FROM node:18.15.0 AS build
+FROM node:19.7.0 AS build
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
