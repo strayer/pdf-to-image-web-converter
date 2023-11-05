@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1
   pdfjs-dist:
-    specifier: ^3.2.146
-    version: 3.2.146
+    specifier: ^4.0.0
+    version: 4.0.189
   sass:
     specifier: ^1.57.1
     version: 1.57.1
@@ -504,6 +504,20 @@ packages:
       - supports-color
     dev: false
 
+  /canvas@2.11.2:
+    resolution: {integrity: sha512-ItanGBMrmRV7Py2Z+Xhs7cT+FNt5K0vPL4p9EZ/UX/Mu7hFbkxSjKF2KVtPwX7UYWp7dRKnrTvReflgrItJbdw==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@mapbox/node-pre-gyp': 1.0.10
+      nan: 2.17.0
+      simple-get: 3.1.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
+    optional: true
+
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
@@ -915,6 +929,13 @@ packages:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
 
+  /path2d-polyfill@2.0.1:
+    resolution: {integrity: sha512-ad/3bsalbbWhmBo0D6FZ4RNMwsLsPpL6gnvhuSaU5Vm7b06Kr5ubSltQQ0T7YKsiJQO+g22zJ4dJKNTXIyOXtA==}
+    engines: {node: '>=8'}
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /pdf-img-convert@1.1.1:
     resolution: {integrity: sha512-rbvXZPD+s3oxPZJ3w3/Ds3hO3by4kZRzgr7Y5mFp54sknye9gABSCcd8s0XwvyNuZlh6IUGUY/LMVZiX7QS9cg==}
     dependencies:
@@ -940,12 +961,12 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: false
 
-  /pdfjs-dist@3.2.146:
-    resolution: {integrity: sha512-wy1OB/v75usRD1LqgxBUWC+ZOiKTmG5J8c2z9XVFrVSSWiVbSuseNojmvFa/TT0pYtcFmkL4zn6KaxvqfPYMRg==}
-    dependencies:
-      web-streams-polyfill: 3.2.1
+  /pdfjs-dist@4.0.189:
+    resolution: {integrity: sha512-5IWbLRJjQJhk3cu3nNFAvIYoSzT8xRYlRkFCIV1tn7hK1eq9H+6vOP0ytJhZz9YI35IXlu33uQspvmYO6Oir4g==}
+    engines: {node: '>=18'}
     optionalDependencies:
-      canvas: 2.11.0
+      canvas: 2.11.2
+      path2d-polyfill: 2.0.1
     transitivePeerDependencies:
       - encoding
       - supports-color

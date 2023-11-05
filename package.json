@@ -12,7 +12,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "pdf-img-convert": "^1.1.1",
-    "pdfjs-dist": "^3.2.146",
+    "pdfjs-dist": "^4.0.0",
     "sass": "^1.57.1",
     "vue": "^3.2.45"
   },
