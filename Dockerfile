@@ -20,7 +20,7 @@ RUN pnpm run build
 
 # ---
 
-FROM nginx:alpine-slim@sha256:c158a8722cc5c67d557697606a1d8d9b942e568b521df9f8723e1d8aa0227485
+FROM nginx:alpine-slim@sha256:4b4bc9f88bd63fb3abc8fd4f5ad7f16554589ca1fca8d3a53416ff55b59b6f80
 
 RUN rm -rf /usr/share/nginx/html/*
 
