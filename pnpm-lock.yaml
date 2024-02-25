@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@popperjs/core':
     specifier: ^2.11.6
-    version: 2.11.6
+    version: 2.11.8
   bootstrap:
     specifier: ^5.2.3
-    version: 5.2.3(@popperjs/core@2.11.6)
+    version: 5.2.3(@popperjs/core@2.11.8)
   pdf-img-convert:
     specifier: ^1.1.1
     version: 1.1.1
@@ -283,8 +283,8 @@ packages:
       - supports-color
     dev: false
 
-  /@popperjs/core@2.11.6:
-    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
   /@types/node@18.11.18:
@@ -463,12 +463,12 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
-  /bootstrap@5.2.3(@popperjs/core@2.11.6):
+  /bootstrap@5.2.3(@popperjs/core@2.11.8):
     resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
     peerDependencies:
       '@popperjs/core': ^2.11.6
     dependencies:
-      '@popperjs/core': 2.11.6
+      '@popperjs/core': 2.11.8
     dev: false
 
   /brace-expansion@1.1.11:
@@ -504,6 +504,20 @@ packages:
       - supports-color
     dev: false
 
+  /canvas@2.11.2:
+    resolution: {integrity: sha512-ItanGBMrmRV7Py2Z+Xhs7cT+FNt5K0vPL4p9EZ/UX/Mu7hFbkxSjKF2KVtPwX7UYWp7dRKnrTvReflgrItJbdw==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@mapbox/node-pre-gyp': 1.0.10
+      nan: 2.17.0
+      simple-get: 3.1.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
+    optional: true
+
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
@@ -516,7 +530,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -640,8 +654,8 @@ packages:
     requiresBuild: true
     dev: false
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -945,7 +959,7 @@ packages:
     dependencies:
       web-streams-polyfill: 3.2.1
     optionalDependencies:
-      canvas: 2.11.0
+      canvas: 2.11.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1004,7 +1018,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /safe-buffer@5.2.1:
@@ -1172,7 +1186,7 @@ packages:
       rollup: 3.11.0
       sass: 1.57.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vue-template-compiler@2.7.14:
